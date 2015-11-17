@@ -136,9 +136,14 @@ chrome.runtime.onMessageExternal.addListener(function(msg, sender, responder) {
   return true; // required if we want to respond after the listener
 });
 
-chrome.app.runtime.onLaunched.addListener(function() {
-  var a = document.createElement('a');
-  a.href = 'http://127.0.0.1:8080/';
-  a.target='_blank';
-  a.click();
-});
+// If we wanted to open a window when launched from chrome:
+// chrome.app.runtime.onLaunched.addListener(function() {
+
+//   // Open a window when launched
+//   // var a = document.createElement('a');
+//   // a.href = 'http://magnitude.io';
+//   // a.target='_blank';
+//   // a.click();
+
+
+// });
