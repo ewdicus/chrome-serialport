@@ -4,14 +4,15 @@
          "scripts": [ "main.bundle.js"]
       }
    },
-   "description": "Exposes a node-serialport compliant interface to front end javascript",
-   "externally_connectable": { 
-    "matches": [ //external websites that can communicate with apps
-      "*://127.0.0.1/*"
+   "externally_connectable": {
+    "matches": [
+      "*://127.0.0.1/*",
+      "*://*.manylabs.org/*",
+      "*://*.magnitude.io/*"
     ]},
    "manifest_version": 2,
-   "name": "chrome-serialport",
+   "description": "Allows serial communication with a microcontroller from Chrome",
+   "name": "Magnitude Serial",
    "permissions": [ "serial" ],
-   "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "0.0.1"
 }
