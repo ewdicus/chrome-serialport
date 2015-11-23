@@ -1,18 +1,23 @@
 {
-   "app": {
-      "background": {
-         "scripts": [ "main.bundle.js"]
-      }
-   },
-   "externally_connectable": {
+  "app": {
+    "background": {
+      "scripts": [ "main.bundle.js"]
+    }
+  },
+  "externally_connectable": {
     "matches": [
       "*://127.0.0.1/*",
       "*://*.manylabs.org/*",
       "*://*.magnitude.io/*"
-    ]},
-   "manifest_version": 2,
-   "description": "Allows serial communication with a microcontroller from Chrome",
-   "name": "Magnitude Serial",
-   "permissions": [ "serial" ],
-   "version": "0.0.1"
+    ]
+  },
+  "icons":{
+    "48": "icon48.png",
+    "128": "icon128.png"
+    },
+  "manifest_version": 2,
+  "description": "Allows serial communication with a microcontroller from Chrome",
+  "name": "Magnitude Serial",
+  "permissions": [ "serial" ],
+  "version": "0.0.2"
 }
